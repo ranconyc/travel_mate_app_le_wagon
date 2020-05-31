@@ -39,7 +39,7 @@
         <div class="divider"></div>
         <div class="info-paragraph">
           <i class="fas fa-language"></i>
-          <%= f.association :languages, label: false, placeholder: @user.languages %>
+          <%= f.association :languages, label: false, placeholder: @user.languages, include_blank: false %>
         </div>
         <div class="divider"></div>
         <div class="info-paragraph">
