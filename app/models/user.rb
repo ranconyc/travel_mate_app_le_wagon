@@ -35,4 +35,11 @@ class User < ApplicationRecord
 
     now.year - dob.year - (is_later_month ? 0 : 1)
   end
+
+  def list_languages
+    lang_list = languages.map do |language|
+      language.name
+    end
+    lang_list.join(',' + ' ')
+  end
 end

@@ -32,11 +32,14 @@
           <%= f.input :location, label: false, placeholder: @user.location %>
         </div>
         <div class="divider"></div>
-        <div class="info-paragraph"><i class="fas fa-home"></i>Tel Aviv, Israel</div>
+        <div class="info-paragraph">
+          <i class="fas fa-home"></i>
+          <%= f.input :hometown, label: false, placeholder: @user.hometown %>
+        </div>
         <div class="divider"></div>
         <div class="info-paragraph">
           <i class="fas fa-language"></i>
-          <%= f.input :language, label: false, placeholder: @user.language %>
+          <%= f.association :languages, label: false, placeholder: @user.languages %>
         </div>
         <div class="divider"></div>
         <div class="info-paragraph">
