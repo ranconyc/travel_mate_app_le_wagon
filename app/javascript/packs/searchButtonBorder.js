@@ -3,7 +3,7 @@ const changeButtonBorder = () => {
 
   cat_btn.forEach((btn) => {
     btn.addEventListener('click', (event) => {
-    btn.style.border = "4px solid white"
+    btn.style.border = "1px solid white"
   });
   });
 }
